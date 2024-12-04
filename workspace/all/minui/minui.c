@@ -745,7 +745,7 @@ static Array* getRoot(void) {
 	}
 	Array_free(entries); // root now owns entries' entries
 	
-	char* tools_path = SDCARD_PATH "/Tools/" PLATFORM;
+	char* tools_path = SDCARD_PATH "/Zahid A/" PLATFORM;
 	if (exists(tools_path) && !simple_mode) Array_push(root, Entry_new(tools_path, ENTRY_DIR));
 	
 	return root;
